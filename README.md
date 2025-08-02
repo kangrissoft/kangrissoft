@@ -15,7 +15,8 @@ Saat ini, saya sedang aktif belajar dan bereksperimen dengan berbagai tools dan 
 ---
 
 ### 🚀 Proyek Terbaru
-- 📝 **TaskFlow** – Aplikasi manajemen tugas sederhana dengan React & localStorage
+- 📝 **Tag Generator SEO** – Tagger SEO adalah alat powerful untuk menghasilkan hashtag dan tag SEO yang relevan guna meningkatkan reach dan engagement konten Anda.
+  Dengan fitur cerdasnya, Tagger SEO membantu Anda menemukan tag yang paling tepat berdasarkan kata kunci dan kategori pilihan
 - 🤖 **Bot Otomasi Twitter** – Bot otomatis posting harian menggunakan Python & Tweepy
 - 🌐 **Portofolio Pribadi** – Website statis dengan HTML, CSS, dan animasi halus
 
@@ -30,7 +31,7 @@ Saat ini, saya sedang aktif belajar dan bereksperimen dengan berbagai tools dan 
 ---
 
 ### 🤝 Mari Terhubung
-- 📧 **Email:** kangrissof@example.com
+- 📧 **Email:** kangrissoft@gmail.com
 - 🌐 [Kumpulan Projek Saya](https://lynk.id/kangris)
 
 ---
