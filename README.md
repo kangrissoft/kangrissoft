@@ -1,7 +1,7 @@
-### 🌟 Selamat datang di GitHub saya – kangrissof!
+### 🌟 Selamat datang di GitHub saya – kangrissoft!
 
 Halo! 👋  
-Saya **Rissof**, atau biasa dipanggil **Kang Rissof** – seorang **pengembang & pembelajar seumur hidup** yang sedang menapaki dunia teknologi. Saya tertarik pada **pengembangan web, otomatisasi, dan solusi teknis sederhana yang bermanfaat**.  
+Saya **Rissoft**, atau biasa dipanggil **Kang Rissoft** – seorang **pengembang & pembelajar seumur hidup** yang sedang menapaki dunia teknologi. Saya tertarik pada **pengembangan web, otomatisasi, dan solusi teknis sederhana yang bermanfaat**.  
 Saat ini, saya sedang aktif belajar dan bereksperimen dengan berbagai tools dan teknologi untuk membangun proyek yang nyata dan aplikatif.
 
 ---
@@ -24,8 +24,8 @@ Saat ini, saya sedang aktif belajar dan bereksperimen dengan berbagai tools dan 
 ---
 
 ### 📊 Statistik GitHub
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=kangrissof&show_icons=true&theme=gruvbox)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=kangrissof&layout=compact&theme=gruvbox)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=kangrissoft&show_icons=true&theme=gruvbox)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=kangrissoft&layout=compact&theme=gruvbox)
 
 ---
 
