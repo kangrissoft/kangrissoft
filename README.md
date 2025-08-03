@@ -16,8 +16,8 @@ Saat ini, saya sedang aktif belajar dan bereksperimen dengan berbagai tools dan 
 
 ### 🚀 Proyek Terbaru
 - 📝 **Tag Generator SEO** – Tagger SEO adalah alat powerful untuk menghasilkan hashtag dan tag SEO yang relevan guna meningkatkan reach dan engagement konten Anda.
-  Dengan fitur cerdasnya, Tagger SEO membantu Anda menemukan tag yang paling tepat berdasarkan kata kunci dan kategori pilihan
-- 🤖 **Bot Otomasi Twitter** – Bot otomatis posting harian menggunakan Python & Tweepy
+  Dengan fitur cerdasnya, Tagger SEO membantu Anda menemukan tag yang paling tepat berdasarkan kata kunci dan kategori pilihan.
+- 🤖 **Keyword Generator GZ** – Web keyword generator tools.
 - 🌐 **Portofolio Pribadi** – Website statis dengan HTML, CSS, dan animasi halus
 
 👉 Semua proyek tersedia di repositori saya. Jangan ragu untuk eksplor dan kasih ⭐ jika bermanfaat!
@@ -32,7 +32,7 @@ Saat ini, saya sedang aktif belajar dan bereksperimen dengan berbagai tools dan 
 
 ### 🤝 Mari Terhubung
 - 📧 **Email:** kangrissoft@gmail.com
-- 🌐 [Kumpulan Projek Saya](https://lynk.id/kangris)
+- 🌐 [Kumpulan Projek Saya](https://lynk.id/kangris-soft)
 
 ---
 
