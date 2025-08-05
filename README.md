@@ -7,7 +7,7 @@ Saat ini, saya sedang aktif belajar dan bereksperimen dengan berbagai tools dan 
 ---
 
 ### 💻 Tech Stack
-- **Languages:** JavaScript, Python, HTML, CSS
+- **Languages:** Java, Python, HTML, JavaScript, CSS
 - **Web Dev:** React, Node.js, Express, Tailwind CSS
 - **Tools:** Git, GitHub, VS Code, Linux, REST API
 - **Belajar Sekarang:** TypeScript, Next.js, dan dasar-dasar DevOps
