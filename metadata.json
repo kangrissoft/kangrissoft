@@ -1,0 +1,7 @@
+{
+  "name": "AI-Powered Portfolio Admin Panel",
+  "description": "A personal portfolio and CV application that doubles as an admin panel, allowing you to manage your biodata, blog posts, and projects with the help of AI-powered content generation.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Portfolio Admin Panel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class', // Enable class-based dark mode
+        theme: {
+          extend: {
+             fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              // Light theme colors (default)
+              'primary': '#FFFFFF',
+              'secondary': '#F9FAFB', // gray-50
+              'accent': '#2563EB', // blue-600
+              'highlight': '#F3F4F6', // gray-100
+              'text-primary': '#1F2937', // gray-800
+              'text-secondary': '#4B5563', // gray-600
+              'border-color': '#E5E7EB', // gray-200
+
+              // Dark theme colors
+              'dark-primary': '#0D1117',
+              'dark-secondary': '#161B22',
+              'dark-accent': '#58A6FF',
+              'dark-highlight': '#21262D',
+              'dark-text-primary': '#C9D1D9',
+              'dark-text-secondary': '#8B949E',
+              'dark-border-color': '#30363D',
+            },
+          },
+        },
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.16.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.1.2",
+    "marked": "https://aistudiocdn.com/marked@^14.0.0"
+  }
+}
+</script>
+<style>
+  /* === PROSE STYLES (FOR MARKDOWN) === */
+  /* Light Mode (default) */
+  .prose-container h1, .prose-container h2, .prose-container h3 { color: #1f2937; margin-bottom: 1rem; font-weight: 600; }
+  .prose-container h1 { font-size: 1.875rem; }
+  .prose-container h2 { font-size: 1.5rem; }
+  .prose-container h3 { font-size: 1.25rem; }
+  .prose-container p { margin-bottom: 1rem; line-height: 1.7; }
+  .prose-container a { color: #2563EB; }
+  .prose-container a:hover { text-decoration: underline; }
+  .prose-container ul, .prose-container ol { margin-left: 1.5rem; margin-bottom: 1rem; }
+  .prose-container ul { list-style-type: disc; }
+  .prose-container ol { list-style-type: decimal; }
+  .prose-container li { margin-bottom: 0.5rem; }
+  .prose-container blockquote { border-left: 4px solid #e5e7eb; padding-left: 1rem; margin: 1rem 0; color: #6b7281; font-style: italic; }
+  .prose-container pre { background-color: #f3f4f6; padding: 1rem; border-radius: 0.5rem; overflow-x: auto; border: 1px solid #e5e7eb; }
+  .prose-container code { background-color: #e5e7eb; color: #1f2937; padding: 0.2em 0.4em; margin: 0; font-size: 85%; border-radius: 6px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  .prose-container pre code { padding: 0; background-color: transparent; border: none; }
+
+  /* Dark Mode Styles */
+  .dark .prose-container h1, .dark .prose-container h2, .dark .prose-container h3 { color: #C9D1D9; }
+  .dark .prose-container a { color: #58A6FF; }
+  .dark .prose-container blockquote { border-left-color: #30363D; color: #8B949E; }
+  .dark .prose-container pre { background-color: #161B22; border-color: #30363D; }
+  .dark .prose-container code { background-color: #21262D; color: #C9D1D9; }
+  .dark .prose-container pre code { background-color: transparent; }
+  
+  /* === PORTFOLIO THEMES === */
+  .theme-default-light {
+    --p-bg-primary: #FFFFFF;
+    --p-bg-secondary: #F9FAFB;
+    --p-text-primary: #1F2937;
+    --p-text-secondary: #4B5563;
+    --p-accent: #2563EB;
+    --p-accent-hover: #1D4ED8;
+    --p-highlight: #F3F4F6;
+    --p-border: #E5E7EB;
+  }
+  .theme-default-dark {
+    --p-bg-primary: #0D1117;
+    --p-bg-secondary: #161B22;
+    --p-text-primary: #C9D1D9;
+    --p-text-secondary: #8B949E;
+    --p-accent: #58A6FF;
+    --p-accent-hover: #388BFD;
+    --p-highlight: #21262D;
+    --p-border: #30363D;
+  }
+  .theme-sunrise {
+    --p-bg-primary: #FFFBF5;
+    --p-bg-secondary: #FFF7ED;
+    --p-text-primary: #4C2B0A;
+    --p-text-secondary: #855D3D;
+    --p-accent: #F97316;
+    --p-accent-hover: #EA580C;
+    --p-highlight: #FFEADD;
+    --p-border: #FED7AA;
+  }
+  .theme-oceanic {
+    --p-bg-primary: #F0F9FF;
+    --p-bg-secondary: #E0F2FE;
+    --p-text-primary: #082F49;
+    --p-text-secondary: #075985;
+    --p-accent: #0EA5E9;
+    --p-accent-hover: #0284C7;
+    --p-highlight: #BAE6FD;
+    --p-border: #7DD3FC;
+  }
+
+  /* === SCROLL ANIMATIONS === */
+  .fade-in-section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s cubic-bezier(0.645, 0.045, 0.355, 1), transform 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition-delay: 0.1s;
+  }
+  .fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-primary text-text-primary dark:bg-dark-primary dark:text-dark-text-primary transition-colors duration-300 font-sans">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

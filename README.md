@@ -1,46 +1,20 @@
-### 🌟 Selamat datang di GitHub saya – kangrissoft!
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+</div>
 
-Halo! 👋  
-Saya **Rissoft**, atau biasa dipanggil **Kang Rissoft** – seorang **pengembang & pembelajar seumur hidup** yang sedang menapaki dunia teknologi. Saya tertarik pada **pengembangan web, otomatisasi, dan solusi teknis sederhana yang bermanfaat**.  
-Saat ini, saya sedang aktif belajar dan bereksperimen dengan berbagai tools dan teknologi untuk membangun proyek yang nyata dan aplikatif.
+# Run and deploy your AI Studio app
 
----
+This contains everything you need to run your app locally.
 
-### 💻 Tech Stack
-- **Languages:** Java, Python, HTML, JavaScript, CSS
-- **Web Dev:** React, Node.js, Express, Tailwind CSS
-- **Tools:** Git, GitHub, VS Code, Linux, REST API
-- **Belajar Sekarang:** TypeScript, Next.js, dan dasar-dasar DevOps
+View your app in AI Studio: https://ai.studio/apps/drive/1d9AMKV9ew2nv21Q5hldV2PW2KxofnHQy
 
----
+## Run Locally
 
-### 🚀 Proyek Terbaru
-- 📝 **Tag Generator SEO** – Tagger SEO adalah alat powerful untuk menghasilkan hashtag dan tag SEO yang relevan guna meningkatkan reach dan engagement konten Anda.
-  Dengan fitur cerdasnya, Tagger SEO membantu Anda menemukan tag yang paling tepat berdasarkan kata kunci dan kategori pilihan.
-- 🤖 **Keyword Generator GZ** – Web keyword generator tools.
-- 🌐 **Portofolio Pribadi** – Website statis dengan HTML, CSS, dan animasi halus
+**Prerequisites:**  Node.js
 
-👉 Semua proyek tersedia di repositori saya. Jangan ragu untuk eksplor dan kasih ⭐ jika bermanfaat!
 
----
-
-### 📊 Statistik GitHub
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=kangrissoft&show_icons=true&theme=gruvbox)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=kangrissoft&layout=compact&theme=gruvbox)
-
----
-
-### 🤝 Mari Terhubung
-- 📧 **Email:** kangrissoft@gmail.com
-- 🌐 [Kumpulan Projek Saya](https://lynk.id/kangris-soft)
-
----
-
-### 🎯 Sedang Dikerjakan
-- ✅ Membangun 1 proyek kecil tiap bulan
-- 📚 Mendalami konsep dasar JavaScript & Git
-- 🚀 Berkontribusi ke proyek open source pertama
-
----
-
-> *"Belajar itu seperti menulis kode — kadang error, tapi selalu ada solusi."*
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`
